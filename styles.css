@@ -95,7 +95,30 @@ outline-offset: 0px;
 
 .container-image:hover .overlay {
     opacity: 1;
+    animation: glow 1s infinite;
 }
+
+@keyframes glow {
+    0% {
+        -webkit-box-shadow: 0px 0px 20px 1px rgba(1,252,250,0.0); 
+        box-shadow: 0px 0px 20px 1px rgba(1,252,250,0.0);
+        border: 5px border rgba(1,252,250,0.1);
+    }
+    50% {
+        -webkit-box-shadow: 0px 0px 20px 1px rgba(1,252,250,0.3); 
+        box-shadow: 0px 0px 20px 1px rgba(1,252,250,0.3);
+        border: 5px border rgba(1,252,250,0.3);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 20px 1px rgba(1,252,250,0.0); 
+        box-shadow: 0px 0px 20px 1px rgba(1,252,250,0.0);
+         border: 5px border rgba(1,252,250,0.1);
+    }
+
+    
+}
+
+
 
 .view {
     position: absolute;
